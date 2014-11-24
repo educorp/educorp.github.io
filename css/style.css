@@ -1,0 +1,339 @@
+@font-face {
+font-family: LeagueGothic-Regular;
+src: url("../fonts/LeagueGothic-Regular.otf") format("opentype");
+}
+@font-face {
+font-family: Dense;
+src: url("../fonts/dense.otf") format("opentype");
+}
+body {
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizelegibility;
+    font-family: 'Montserrat', sans-serif, 'Dense';
+    background: #333;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+            -webkit-transition: all 750ms ease;
+    -moz-transition: all 750ms ease;
+    transition: all 750ms ease;
+}
+
+
+/* Enables padding without */
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+::selection {
+    background: #ff455f;
+    color: #fff;
+}
+
+@media only screen and (max-width : 768px) {
+    
+    #home {
+background: url("../img/wheat2.jpg")!important;
+        background-size: cover;
+        -webkit-background-size: cover!important;
+        -moz-background-size: cover!important;
+        -o-background-size: cover!important;
+
+        position: fixed!important;
+        background-position: center center!important;
+        background-repeat: no-repeat!important;
+            padding-bottom: 500px!important;
+    padding-top: 250px!important;
+}
+
+    
+header img, .navigation {
+display: none;}
+    
+    h1, h2, h3 {
+    
+    font-size: 100%;
+}
+
+    h4, p, a {
+        font-size: 75%;
+    }
+    
+
+    .col-50, .col-25, .col-75 {
+    width:100%!important;}
+    
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+    
+p {
+    color: #eee;
+}
+
+section {
+    width: 100%;
+    float: left;
+    clear: both;
+	padding: 130px 0;
+	margin: 0px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    /* mobile z-index bug fix */
+    -webkit-transform: translate3d(0,0,0);
+}
+
+#home {
+    background: url("../img/wheat2.jpg") no-repeat fixed center;
+    padding-bottom: 100vh;
+    padding-top: 30vh;
+}
+
+
+#about {
+    background-color: #fff;
+    margin-top: 70vh;
+}
+
+#about2 {
+    background-color: #333;
+    padding: 0px;
+}
+
+#services {
+    background-color: red;
+}
+
+#temp {
+    background-color: #fff;
+}
+
+#team {
+    background-color: #333;
+}
+
+#social {
+    background-color: #fff;
+}
+
+#contact {
+    background-color: #333;
+}
+
+#footer {
+    background: url("../img/tartu_pano_old2.jpg") no-repeat center;
+    bottom: 0;
+    padding: 20px;
+}
+
+
+.img-responsive {
+    /*display: block;*/
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    display: inline-block;
+    position: relative;
+    padding: 15px;
+}
+
+.col {
+    float: left;
+    position: relative;
+    padding: 30px;
+}
+
+.col-inline {
+    display: inline-block;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-35 {
+    width: 35%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-65 {
+    width: 65%;
+}
+
+.col-75 {
+    width: 75%;
+}
+
+.background-z0 {
+    position: fixed;
+    z-index: 0;
+}
+
+.background-z1 {
+
+    position: fixed;
+    z-index: 1;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.btn-white {
+    padding: 20px;
+    border: 1px solid #eee;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.btn-white:hover {
+    background-color: #eee;
+    color: #333;
+    -webkit-transition: all 750ms ease;
+    -moz-transition: all 750ms ease;
+    transition: all 750ms ease;
+}
+
+.sect-white, .sect-white p {
+    color: #333;
+}
+
+.sect-dark, .sect-dark p {
+    color: #eee;
+}
+
+header {
+    position: fixed;
+    z-index: 4;
+    list-style: none;
+    width: 100%;
+}
+
+header img {
+    max-height: 150px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 100%;
+    margin: 15px;  
+}
+
+ul {
+padding-left: 0;
+}
+
+.navigation {
+    float: right;
+     background: rgba(255, 255, 255, 0.9);
+}
+
+.navigation li {
+    display: block;
+    padding: 30px;
+}
+.navigation li:hover ul {
+    display: block;
+}
+
+.navigation li ul {
+    display: none;
+    position: absolute;
+    top:95px;
+    background: rgba(255, 255, 255, 0.9);
+}
+.navigation li ul li {
+min-width: 189px;
+}
+
+.navigation li, .navigation li a {
+    color: #595959;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contacts li {
+    display: inline-block;
+    padding: 15px 15px 20px;
+}
+
+.contacts li a {
+
+        color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cover {
+    background-size:cover;
+    background-position: center;
+    min-height: 400px;
+}
+.cover:hover h3 {
+    background-color: rgba(14, 24, 50, 0.85)!important;
+    -webkit-transition: all 750ms ease;
+    -moz-transition: all 750ms ease;
+    transition: all 750ms ease;
+    visibility: visible;
+}
+
+.cover h3 {
+    visibility: hidden;
+max-width: 450px;
+position: absolute;
+left: 25%;
+top: 50%;
+}
+
+.triangle {
+position: absolute;
+display: block;
+width: 80px;
+height: 80px;
+background: #fff;
+top: -40px;
+left: 50%;
+-o-transform: translate(-50%, 0) rotate(-45deg);
+-ms-transform: translate(-50%, 0) rotate(-45deg);
+-moz-transform: translate(-50%, 0) rotate(-45deg);
+-webkit-transform: translate(-50%, 0) rotate(-45deg);
+transform: translate(-50%, 0) rotate(-45deg);
+    z-index: 2;
+}
+
+.roundcrc {
+width: 200px;
+height: 200px;
+display: inline-block;
+border-radius: 50%;
+    margin: 75px -20px;
+background-color: rgba(51, 51, 51, 0.54);
+    overflow: hidden;
+}
+
+.social_links li {
+    display: inline-block;
+}
+
+.team_member img {
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+
+.marg75 {
+    margin: 75px 0;
+}
