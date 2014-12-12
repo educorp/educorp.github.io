@@ -2,7 +2,8 @@
 <html lang="et">
     <head>
         <meta charset="utf-8">
-            <title>Student Corporation</title>
+        
+        <title>Student Corporation</title>
         
     <!-- iOS webapp settings -->
         <!-- Set viewport. -->
@@ -27,12 +28,13 @@
        
         <link rel="stylesheet" href="css/style.css">
         
+    <!-- Import Google Webfont -->    
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
     </head>
 
     <body>
-        
+    <!-- Dropdown navigation elements -->
         <header>
                <a href="#home"><img src="./img/logo.png" class="img-responsive"></a>
                 <ul class="navigation">
@@ -66,7 +68,7 @@
         <section id="home" class="background-z1 center">
            <h1>Me loome inspireerivaid <br> loomingulisi kogemusi.</h1>
         
-                <a href=""><div class="btn-white">Rohkem informatsiooni</div></a>
+                <a href="#infobox"><div class="btn-white">Koodi ülevaade</div></a>
             
         </section>
         
@@ -97,7 +99,7 @@
                     <p>
                         Lorem ipsum dolor sit amet, ne pri mucius oportere repudiandae, ad has torquatos incorrupte. Lorem ipsum dolor sit amet, ne pri mucius oportere repudiandae, ad has torquatos incorrupte. 
                     </p>
-                    <a href=""><div class="btn-white">More information</div></a>
+                    <a href="#infobox"><div class="btn-white">More information</div></a>
                </div>
                <div class="col col-50 cover" style="background-image: url('./img/tree.jpg');">
                     <h3>It's a Jungle out there</h3>
@@ -169,6 +171,7 @@
               <div class="col col-75"><p>Lorem ipsum dolor sit amet, ne pri mucius oportere repudiandae, ad has torquatos incorrupte. Elitr offendit vivendum ius eu, ut sea nominavi atomorum. Nec docendi expetenda gloriatur te, vis erat eripuit at. Cum ad odio vide suscipit, habemus consectetuer ex sed. Ei usu soleat bonorum, saperet erroribus vix at.</p></div>
               <div class="col col-25"><p>Lorem ipsum dolor sit amet, ne pri mucius oportere repudiandae, ad has torquatos incorrupte. Elitr offendit vivendum ius eu, ut sea nominavi atomorum. Nec docendi expetenda gloriatur te, vis erat eripuit at. Cum ad odio vide suscipit, habemus consectetuer ex sed. Ei usu soleat bonorum, saperet erroribus vix at.</p></div>
             </div>
+
         </section>
        
         <section id="team">
@@ -181,7 +184,7 @@
         <section id="social" class="sect-white center">
            <h1>Meie meeskond</h1>
             <div class="row">
-                <div class="col col-50 team_member">
+                <div class="col col-25 team_member">
                     <div class="roundcrc"><img src="./img/member1.jpg" class="img-responsive"></div>
                     <h4>Jane Smith</h4>
                     <p>Guide</p>
@@ -192,7 +195,7 @@
                     </ul>
                 </div>
                 
-                <div class="col col-50 team_member">
+                <div class="col col-25 team_member">
                     <div class="roundcrc"><img src="./img/member2.jpg" class="img-responsive"></div>
                     <h4>Jane Doe</h4>
                     <p>Training</p>
@@ -203,10 +206,7 @@
                     </ul>
                 </div>
                 
-            </div>
-                
-            <div class="row">
-                <div class="col col-50 team_member">
+                <div class="col col-25 team_member">
                     <div class="roundcrc"><img src="./img/member3.jpg" class="img-responsive"></div>
                     <h4>Julie Wattson</h4>
                     <p>Marketing</p>
@@ -217,7 +217,7 @@
                     </ul>
                 </div>
                 
-                <div class="col col-50 team_member">
+                <div class="col col-25 team_member">
                     <div class="roundcrc"><img src="./img/member4.jpg" class="img-responsive"></div>
                     <h4>Mary Parkinson</h4>
                     <p>Sales</p>
@@ -227,8 +227,10 @@
                         <li>LinkedIn</li>
                     </ul>
                 </div>
-
+                
             </div>
+                
+
 
 
         </section>
@@ -257,5 +259,24 @@
         </section>   
         
         
+        <!-- Overlay infobox for code review -->
+        <div id="infobox">
+                    <div class="row infobox_inside">
+                    <a href=""><div class="btn-close"><div class="xcross-l"><div class="xcross-r"></div></div></div></a>
+                    <h1>Github Gists for the current site</h1>
+                    <div class="col col-50"><script src="https://gist.github.com/otttooming/6c58ea1caa242e67b65c.js"></script>
+
+                    </div>
+                      <div class="col col-50">
+
+                      <!-- Pure CSS close button -->
+                      
+
+                      <script src="https://gist.github.com/otttooming/292efcc51d0413c01450.js"></script>
+
+                      </div>
+            </div>
+        
+        </div>
     </body>
 </html>
