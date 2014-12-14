@@ -34,14 +34,14 @@
     </head>
 
     <body>
-    <!-- Dropdown navigation elements -->
-        <header>
-               <a href="#home"><img src="./img/logo.png" class="img-responsive"></a>
-                <ul class="navigation">
-                   <li>Navigatsioon
+    
+    <div id="navbar">
+        <a href=""><div class="btn-close"><div class="xcross-l"><div class="xcross-r"></div></div></div></a>
+                <ul>
+                   <li>
                        <ul>
                             <li>
-                                <a href="#home">Ülesse</a>
+                                <a href="#global">Ülesse</a>
                             </li>
                             <li>
                                 <a href="#about">Meist</a>
@@ -59,6 +59,20 @@
                                 <a href="#social">Kontakt</a>
                             </li>
                         </ul>
+                    </li>
+                </ul>
+        
+    </div>
+    
+    <div id="global">
+    
+    <!-- Dropdown navigation elements -->
+        <header>
+    <!-- Unused left side logo
+            <a href="#global"><img src="./img/logo.png" class="img-responsive"></a> -->
+                <ul class="navigation">
+                    <li>
+                        <a href="#navbar" class="burger"><span></span></a>
                     </li>
                 </ul>
             
@@ -258,7 +272,7 @@
 
         </section>   
         
-        
+        </div> <!-- End global wrapper -->
         <!-- Overlay infobox for code review -->
         <div id="infobox">
                     <div class="row infobox_inside">
