@@ -1,4 +1,4 @@
-educorp.github.io
+aup2015
 =================
 
-Student company project
+Avatu uste päev 2015 projekt

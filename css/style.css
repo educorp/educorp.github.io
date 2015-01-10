@@ -75,11 +75,18 @@ body {
 }
 /* END media query */
 
-h1, h2, h3 {
-    text-transform: uppercase;
+h1 {
+    font-size: 300%;
+}
+
+h2, h3 {
     font-size: 200%;
 }
 
+h1, h2, h3 {
+    font-family: "Playfair Display";
+    font-style: italic;
+}
     
 p {
     color: #eee;
@@ -401,6 +408,8 @@ ul {
     
 }
 
+
+
 /* Github Ghist snippet height, to prevent overflow from infobox */
 .gist-file .gist-data {max-height: 400px;}
 
@@ -412,7 +421,11 @@ ul {
 }
 
 #navbar:target {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 750ms ease;
+    -moz-transition: all 750ms ease;
+    transition: all 750ms ease;
 }
 
 #navbar:target ~ #global {
@@ -424,7 +437,8 @@ ul {
 }
 
 #navbar {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     top: 0;
     right: 0;
@@ -432,6 +446,7 @@ ul {
     z-index: 20;
     background-color: #333;
     height: 100vh;
+
 }
 #navbar li {
     padding: 20px;
@@ -444,6 +459,22 @@ ul {
     color: #eee;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+/* Mask to overlay while #navbar is active */
+
+#mask {
+    display: none;
+    position: fixed;
+    right: 300px;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background-color: rgba(255,255,255,0.5)
+}
+
+#navbar:target ~ #mask {
+    display: block;
 }
 
 /* CSS burger */
